@@ -2,6 +2,7 @@
 
 A Streamlit-powered web application to predict and display earthquake activity using a machine learning model and interactive user interface.
 
+app-link : https://earthquake-magnitude-predictor-io.streamlit.app/
 ---
 
 ## 🚀 Features
