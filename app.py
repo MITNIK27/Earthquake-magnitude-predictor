@@ -352,6 +352,16 @@ def dashboard_page():
 # Predictor Page
 def prediction_page():
     set_bg()
+    st.markdown("""
+        <style>
+            body {
+                background-color:  #12343b ;
+            }
+            .stApp {
+                background-color:  #12343b ;      
+            }
+        </style>
+    """, unsafe_allow_html=True)
     st.title("🌍 Earthquake Magnitude Predictor")
 
     # User badge top-right
