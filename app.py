@@ -313,7 +313,7 @@ def dashboard_page():
         pie_data = pd.concat([major_regions[['region', 'count']], other_row])
 
         # Plot pie chart
-        fig, ax = plt.subplots(figsize=(6, 4.5))  # ✅ Bigger size to match map
+        fig, ax = plt.subplots(figsize=(6, 5.5))  # ✅ Bigger size to match map
         wedges, texts, autotexts = ax.pie(
             pie_data['count'],
             labels=pie_data['region'],
