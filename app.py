@@ -179,7 +179,6 @@ def set_bg():
 def login_signup_page():
     set_bg()
     st.title("🔒 Earthquake App - Login/Signup")
-    st.image("https://cdn-icons-png.flaticon.com/512/3064/3064197.png", width=100)
 
     page = st.selectbox("Choose Action", ["Login", "Signup"])
     username = st.text_input("Username")
