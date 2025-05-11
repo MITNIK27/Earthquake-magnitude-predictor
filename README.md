@@ -117,6 +117,6 @@ Please ensure proper licensing when using images/assets for public deployment.
 
 ---
 
-> Developed by [Paarth Sahni] | 2025  
+> Developed by Paarth Sahni| 2025  
 > Powered by Machine Learning & Streamlit 🌊
 
