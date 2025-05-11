@@ -199,11 +199,29 @@ def login_signup_page():
                 st.success("Signup successful! Please login now ✅")
             else:
                 st.error("Username already exists ❌")
+st.markdown("""
+    <style>
+        .title {
+            text-align: center;
+            margin-top: 5px;
+            font-size: 50px;
+            font-weight: bold;
+            color: #f2f0f0;
+        }
+        .subtitle {
+            text-align: center;
+            margin-top: 5px;
+            font-size: 50px;
+            font-weight: bold;
+            color: #f2f0f0;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 # Dashboard Page
 def dashboard_page():
     set_bg()
-    st.title("🌍 Earthquake Hotspots Dashboard")    # User badge top-right
+    st.markdown('<div class="subtitle">🌍 Earthquake Hotspots Dashboard</div>', unsafe_allow_html=True)
     user_badge(st.session_state.username)
 
     st.markdown("""
@@ -313,7 +331,7 @@ def dashboard_page():
         pie_data = pd.concat([major_regions[['region', 'count']], other_row])
 
         # Plot pie chart
-        fig, ax = plt.subplots(figsize=(6, 6))  # ✅ Bigger size to match map
+        fig, ax = plt.subplots(figsize=(6, 4.5))  # ✅ Bigger size to match map
         wedges, texts, autotexts = ax.pie(
             pie_data['count'],
             labels=pie_data['region'],
@@ -353,16 +371,16 @@ def dashboard_page():
 def prediction_page():
     set_bg()
     st.markdown("""
-        <style>
-            body {
-                background-color:  #12343b ;
-            }
-            .stApp {
-                background-color:  #12343b ;      
-            }
-        </style>
-    """, unsafe_allow_html=True)
-    st.title("🌍 Earthquake Magnitude Predictor")
+            <style>
+                body {
+                    background-color:  #12343b ;
+                }
+                .stApp {
+                    background-color:  #12343b ;      
+                }
+            </style>
+        """, unsafe_allow_html=True)
+    st.markdown('<div class="title">🌍 Earthquake Magnitude Predictor</div>', unsafe_allow_html=True)
 
     # User badge top-right
     user_badge(st.session_state.username)
