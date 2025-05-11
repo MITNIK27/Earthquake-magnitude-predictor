@@ -467,7 +467,7 @@ else:
 
     if page == "Dashboard":
         dashboard_page()
-    elif page == "Magnitude Predictor":
+    elif page == "Predictor":
         prediction_page()
     elif page == "Logout":
         st.session_state.logged_in = False
