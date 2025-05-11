@@ -312,7 +312,7 @@ def dashboard_page():
 
     # 📊 Pie chart with "<2%" grouped as "Other"
     with col2:
-        st.write("### 📊 Earthquake Counts by Region (Pie Chart)")
+        st.write("### 📊 Earthquake Counts by Region")
 
         total_counts = region_group['count'].sum()
         region_group['percent'] = region_group['count'] / total_counts * 100
